@@ -71,8 +71,10 @@ def all_holidays_with_bbq(holiday_hash)
 holiday_hash.collect do |season, holiday|
     holiday.collect do |holiday, type|
       holiday if type.include?("BBQ")
+      newArr << holiday
     end 
   end
+  newArr
 end
 
 
